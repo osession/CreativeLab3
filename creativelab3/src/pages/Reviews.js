@@ -6,7 +6,7 @@ class Reviews extends React.Component {
     super(props);
      this.state = {
         review: '', 
-        reviews:[]
+        reviews:["This was the best Tandoori Chicken recipe I've ever made!", "That irish stew was nasty. Don't ever use this recipe", "These recipes are pretty good, but might I comment on how wonderfully functional this website is", "That sugar pie is scrumptious", "10/10 reccomend the Spaghetti Bolognese"]
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -41,7 +41,7 @@ class Reviews extends React.Component {
       <li key={index}>{thisreview}</li>
     );
     return (
-        <div>
+        <div className="reviewsPage">
           <h1> Reviews </h1>
           <form onSubmit={this.handleSubmit} onKeyUp={this.handleChange}>
             <label>

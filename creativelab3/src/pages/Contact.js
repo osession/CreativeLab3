@@ -8,11 +8,11 @@ class Contact extends React.Component {
 render() {
 
 return (
-    <div>
+    <div className="contactPage">
     <h1>Contact Me</h1>
     <p>Phone: (123) 456-7890</p>
     <p>Email: yummy.recipes@gmail.com</p>
-    <p>Instagrm: yummyrecipes</p>
+    <p>Instagram: yummyrecipes</p>
     </div>);
   };
 

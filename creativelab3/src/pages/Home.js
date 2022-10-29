@@ -74,7 +74,7 @@ test() {
       </div>
     );*/
       return (
-      <div>
+      <div className = "homePage">
   
   
     
