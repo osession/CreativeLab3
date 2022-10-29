@@ -78,7 +78,7 @@ test() {
   
   
     
-  <h1>Creative Lab 2: Recipes</h1>
+  <h1>Creative Lab 3: Recipes</h1>
   
 <form onSubmit={this.handleSubmit} onKeyUp={this.handleChange}> 
   <div id="search">
