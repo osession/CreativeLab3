@@ -1,4 +1,5 @@
 import React from "react";
+import logo from './images/cooking.jpg';
 
 class Home extends React.Component {
 
@@ -75,23 +76,21 @@ test() {
     );*/
       return (
       <div className = "homePage">
-  
-  
     
   <h1>Creative Lab 3: Recipes</h1>
+  <img src={logo} alt="Logo" />
   
 <form onSubmit={this.handleSubmit} onKeyUp={this.handleChange}> 
   <div id="search">
     <label>Enter a dish name:</label>
     <input type="text" value={this.state.value} onChange={this.handleChange}/>
-    Suggestion (type the first letter for a list): <span id="txtHint">Empty</span>
     <input id="mealSubmit" type="submit" value="Submit"></input>
+    <p>Suggestion (type the first letter for a list):</p><span id="txtHint"></span>
   </div>
   <ul>{listItems}</ul>
 </form>
 
 <div id="page">
-
   <div id="allRecipe">
     <div id="allIngredients">
       <div className="header">
